@@ -1,29 +1,126 @@
+
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
 <html>
   <head>
     <title>Samosa Village</title>
-<link rel="stylesheet" href = "https://mamkh27.github.io/css/styles.css">
-   <title> Practice </title> 
+
+    <style type ="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Oswald, sans-serif;
+    }
+
+    .background-wrap{
+      position: absolute;
+      z-index: -1000;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      background-color:black;
+      font-size: 0;
+
+    }
+
+    #video-bg-elem {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      min-height: 100%;
+      min-width: 100%;
+
+    }
+
+    .content{
+      position: absolute;
+      width: 100%;
+      min-height: 100%;
+      z-index: 1000;
+      background-color : rgba(0,0,0,0.7);
+    }
+
+    .content h1{
+      text-align: center;
+      font-family: Oswald;
+      font-size: 65px;
+      text-transform:uppercase;
+      font-weight: 300;
+      color: white;
+      padding-top: 15%;
+      margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        font-family: Oswald;
+        color:white;
+        text-align: center;
+        font-size:1.5em;
+        margin:0;
+        margin-top:50px;
+        padding:0;
+    }
+
+    h1 {
+
+        font-family: Oswald,sans-serif;
+        color: white;
+        text-align: center;
+        font-size:5.0em;
+        margin-top:50px;
+        margin-bottom:0px;
+        padding:10px;
+    }
+
+    body {
+      background-size: 100%;
+    }
+    </style>
+    <!-- <title> Practice </title> -->
   </head>
   <body padding=0 margin=0>
-<h1>  Mampz Video</h1>
-<p style="color:white ;font-family:Oswald, sans-serif; font-size:1.5em" align=center margin=0 padding=0>
- pixelated magic. </p>
-<p align=center border=0 margin-bottom=50>
-  <a href="https://www.facebook.com/manprit.kaur.52"><img src="https://user-images.githubusercontent.com/22602047/40334308-ddcf17ce-5d11-11e8-9e2a-ffb01c9f0c1f.png" width=50 height=50 border=0 align=center></a>
-  <a href="http://www.instagram.com/mampzzzz"><img src="https://user-images.githubusercontent.com/22602047/40334309-ddee58dc-5d11-11e8-81f3-7352990dc8bf.png" width=50 height=50 border=0 align=center></a>
-  <a href="https://www.linkedin.com/in/manpritheer/"><img src="https://user-images.githubusercontent.com/22602047/40334310-de0799c8-5d11-11e8-8168-e0ab43ade8da.png" width=50 height=50 border=0 margin-left=20px align=center></a>
-  <a href="mailto:mkheer@ucdavis.edu"><img src="https://user-images.githubusercontent.com/22602047/40334312-de270f42-5d11-11e8-8f0e-df83df741ee7.png" width=50 height=50 border=0 align=center></a>
-  <a href="tel:19167690370"><img src="https://user-images.githubusercontent.com/22602047/40334313-de49c0a0-5d11-11e8-8c2b-09d3f8a53eb4.png" width=50 height=50 border=0 align=center></a>
-</p>
 
-<ul>
-  <li><a class="active" href="https://mamkh27.github.io">Home</a></li>
-  <li><a href="AboutMe.html">MV Crew</a></li>
-  <li><a href="Gallery.html">Gallery</a></li>
+    <div class ="background-wrap">
+      <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+  <source src="LoopedWebVideo.mp4" type="video/mp4">
+    Video not Supported
+      </video>
 
-</ul>
+  </div>
 
+<div class = "content">
+  <h1 align=center class=> Mampz Video</h1>
+  <p align=center border=0 margin-bottom=50>
+    <a href="https://www.facebook.com/manprit.kaur.52"><img src="1.png" width=50 height=50 border=0 align=center ></a>
+    <a href="http://www.instagram.com/mampzzzz"><img src="2.png" width=50 height=50 border=0 align=center></a>
+    <a href="https://www.linkedin.com/in/manpritheer/"><img src="3.png" width=50 height=50 margin-left=20px border=0 align=center></a>
+    <a href="mailto:mkheer@ucdavis.edu"><img src="4.png" width=50 height=50 border=0 align=center></a>
+    <a href="tel:19167690370"><img src="5.png" width=50 height=50 border=0 align=center></a>
+  </p>
+
+  <ul>
+    <li><a class="active" href="Home.html">Home</a></li>
+    <li><a href="AboutMe.html">MV Crew</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+
+  </ul>
+
+
+</div>
+<div class ="background-wrap">
+  <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+<source src="https://www.youtube.com/watch?v=BYU-mwSTfpY&feature=youtu.be" type="video/mp4">
+Video not Supported
+  </video>
+
+</div>
 </body>
 </html>

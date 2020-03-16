@@ -8,7 +8,7 @@ document.write("Hello Guys");
         div2.style.display = 'none';
     }
     else {
-        div.style.display = 'block';
-        div2.style.display = 'block';
+        div.style.display = 'inline';
+        div2.style.display = 'inline';
     }
 };

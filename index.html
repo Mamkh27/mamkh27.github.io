@@ -19,7 +19,7 @@
     <div><button class = "button b1">About Me</button></div>
     <div><button class = "button b2">Projects</button></div>
         <div><button class = "button b3">Coursework</button></div>
-            <div><button class = "button" class = "b4" id= "b4u">Rani Frames</button></div>
+            <div><button class = "button" class = "b4" onclick = "myFunction()">Rani Frames</button></div>
 </div class = "insta_stuff">
     <script type="text/javascript" src="script.js"></script>
     <div>
@@ -28,17 +28,15 @@
     <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
   </div>
 <script>
-var button = document.getElementByClass('b4'); // Assumes element with id='button'
-   var div = document.getElementByClass('insta_stuff');
 
-   if (div.style.display != 'none') {
-       div.style.display = 'none';
-   }
-   else {
-       div.style.display = 'inline';
-   }
-};
-
+function myFunction() {
+ var x = document.getElementByClass("insta_stuff");
+ if (x.style.display === "none") {
+   x.style.display = "block";
+ } else {
+   x.style.display = "none";
+ }
+}
 </script>
   </body>
 

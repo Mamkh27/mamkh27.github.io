@@ -23,11 +23,23 @@
 </div>
     <script type="text/javascript" src="script.js"></script>
 <script>
-document.write("Hello Guys");
+var button = document.getElementByClass('b4'); // Assumes element with id='button'
+   var div = document.getElementById('pixlee_container');
+   var div2 = document.getElementByClass('test')
+   if (div.style.display !== 'none') {
+       div.style.display = 'none';
+       div2.style.display = 'none';
+   }
+   else {
+       div.style.display = 'inline';
+       div2.style.display = 'inline';
+   }
+};
+
 </script>
-    <!-- <div id="pixlee_container"></div>
+    <div id="pixlee_container"></div>
     <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'1dIRjXgIhemwpnsTzH8i'});Pixlee.addSimpleWidget({widgetId:'25943'});};</script>
-    <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script> -->
+    <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
   </body>
 
 </html>

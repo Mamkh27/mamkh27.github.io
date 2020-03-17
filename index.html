@@ -15,10 +15,10 @@
 
  <div class ="name">Manprit Heer</div>
  <div class = "bar">
-    <div><button class = "button b1">About Me</button></div>
-    <div><button class = "button b2">Projects</button></div>
-    <div><button class = "button b3">Coursework</button></div>
-    <div><button class= "button b4" onclick= "myFunction()">Rani Frames</button></div>
+    <div><button class = "button b1"onclick= "AMFunction()">About Me</button></div>
+    <div><button class = "button b2"onclick= "PFunction()">Projects</button></div>
+    <div><button class = "button b3"onclick= "CWFunction()">Coursework</button></div>
+    <div><button class= "button b4" onclick= "RFFunction()">Rani Frames</button></div>
 </div>
 
 <div id = "insta_stuff">
@@ -29,18 +29,73 @@
     <div id="pixlee_container"></div>
 </div>
 
+<div id = "aboutme">
+  About Me:
+</div>
+
+<div id = "coursework">
+Course Work:
+</div>
+
+<div id = "projects">
+  Projects
+</div>
+
 <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'1dIRjXgIhemwpnsTzH8i'});Pixlee.addSimpleWidget({widgetId:'25943'});};</script>
 <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
 
 </body>
 
   <script>
-  function myFunction() {
-   var x = document.getElementById("insta_stuff");
+var w = document.getElementById("projects");
+var x = document.getElementById("insta_stuff");
+var y = document.getElementById("aboutme");
+var z = document.getElementById("coursework");
+
+  function RFFunction() {
+    w.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "none";
    if (x.style.display === "none") {
      x.style.display = "block";
    } else {
      x.style.display = "none";
+   }
+  }
+
+  function AMFunction() {
+    w.style.display = "none";
+    x.style.display = "none";
+    z.style.display = "none";
+   if (y.style.display === "none") {
+     y.style.display = "block";
+   } else {
+     y.style.display = "none";
+
+   }
+  }
+
+  function CWFunction() {
+    w.style.display = "none";
+    y.style.display = "none";
+    x.style.display = "none";
+   if (z.style.display === "none") {
+     z.style.display = "block";
+
+   } else {
+     z.style.display = "none";
+   }
+  }
+
+  function PFunction() {
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "none";
+   if (w.style.display === "none") {
+     w.style.display = "block";
+
+   } else {
+     w.style.display = "none";
    }
   }
   </script>

@@ -8,6 +8,16 @@
     <title>title</title>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    function myFunction() {
+     var x = document.getElementByClass("insta_stuff");
+     if (x.style.display === "none") {
+       x.style.display = "block";
+     } else {
+       x.style.display = "none";
+     }
+    }
+    </script>
   </head>
   <body>
     <div class = "img-circle">
@@ -19,7 +29,7 @@
     <div><button class = "button b1">About Me</button></div>
     <div><button class = "button b2">Projects</button></div>
         <div><button class = "button b3">Coursework</button></div>
-            <div><button class = "button" class = "b4" onclick = "myFunction()">Rani Frames</button></div>
+            <div><button class= "button" class = "b4" onclick= "myFunction()">Rani Frames</button></div>
 </div>
 
     <div class = "insta_stuff">
@@ -29,17 +39,7 @@
     <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'1dIRjXgIhemwpnsTzH8i'});Pixlee.addSimpleWidget({widgetId:'25943'});};</script>
     <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
 
-<script>
 
-function myFunction() {
- var x = document.getElementByClass("insta_stuff");
- if (x.style.display === "none") {
-   x.style.display = "block";
- } else {
-   x.style.display = "none";
- }
-}
-</script>
   </body>
 
 </html>
